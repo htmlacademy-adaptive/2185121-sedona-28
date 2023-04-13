@@ -1,0 +1,16 @@
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.heading__description {
+  color: $color-night-rider;
+  margin: 0;
+}

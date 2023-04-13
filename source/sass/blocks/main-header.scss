@@ -1,0 +1,25 @@
+.main-header {
+  position: relative;
+  padding: 17px 20px;
+}
+
+.main-header__logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo-image {
+  max-width: none;
+}
+
+.main-header__toggle {
+  margin-left: auto;
+}

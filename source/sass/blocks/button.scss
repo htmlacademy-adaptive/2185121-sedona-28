@@ -1,0 +1,13 @@
+.button {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: $color-seagull;
+  border: none;
+  color: $color-white;
+}

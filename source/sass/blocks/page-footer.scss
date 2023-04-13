@@ -1,0 +1,31 @@
+.page-footer {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 33px 82px;
+}
+
+.page-footer__hashtag {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.page-footer__copyright-link {
+  max-width: 129px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: $color-black;
+
+  &:hover {
+    color: $color-seagull;
+  }
+
+  &:active {
+    color: $color-pink-swan;
+  }
+}
