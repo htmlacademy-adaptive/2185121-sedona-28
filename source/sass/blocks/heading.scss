@@ -4,13 +4,15 @@
 }
 
 .heading__title {
+  margin: 0;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin: 0;
 }
 
 .heading__description {
-  color: $color-night-rider;
   margin: 0;
+
+  color: $color-night-rider;
 }

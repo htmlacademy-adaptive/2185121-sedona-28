@@ -1,0 +1,52 @@
+.modal {
+  text-align: center;
+  text-transform: uppercase;
+
+  &--error-geometry {
+    padding: 45px 42px 35px 41px;
+  }
+
+  &--success-geometry {
+    padding-top: 39px;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 24px; // проверить на PP
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.modal__text {
+  margin: 0;
+  margin-bottom: 28px;
+
+  color: #333333;
+}
+
+.modal__text-wrapper {
+  max-width: 244px;
+  margin: 0 auto;
+}
+
+.modal__button {
+  margin: 0 auto;
+
+  &--error {
+    padding: 18px 64px;
+  }
+
+  &--success {
+    padding: 18px 62px 14px 60px;
+  }
+}
+
+.modal__button-wrapper {
+  margin-top: 2px;
+  padding: 20px;
+
+  background-color: $color-white-smoke;
+}

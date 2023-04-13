@@ -1,13 +1,15 @@
 .site-list {
-  display: none;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   position: absolute;
-  z-index: 2;
   top: 0;
   left: 0;
+  z-index: 2;
+
+  display: none;
   width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .site-list.active {
@@ -16,22 +18,25 @@
 
 .site-list__link {
   display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $color-white;
-  background-color: $color-seagull;
-  text-align: center;
+  padding: 17px 67px 12px 67px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding: 17px 67px 12px 67px;
+  text-align: center;
+  color: $color-white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-seagull;
 
   &:hover {
     background-color: $color-shakespeare;
   }
 
   &:active {
-    background-color: $color-shakespeare-darknest;
     color: rgba($color-white, 0.3);
+
+    background-color: $color-shakespeare-darknest;
   }
 }

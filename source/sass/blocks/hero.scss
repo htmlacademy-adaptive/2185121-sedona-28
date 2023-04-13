@@ -1,9 +1,11 @@
 .hero {
   position: relative;
+
   background-color: $color-black;
 
   &--index {
     padding: 90px 19px 85px 19px;
+
     background-image: url("../img/hero-background-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -12,7 +14,8 @@
 
   &--inner {
     padding: 52px 46px 67px 45px;
-    background-image: url("../../img/hero-background-inner-mobile.jpg");
+
+    background-image: url("../img/hero-background-inner-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -5,6 +5,7 @@
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+
   list-style: none;
 }
 
@@ -14,8 +15,9 @@
 
 .social__link {
   display: block;
-  background-color: $color-seagull;
   padding: 24px;
+
+  background-color: $color-seagull;
   background-repeat: no-repeat;
   background-position: center;
 

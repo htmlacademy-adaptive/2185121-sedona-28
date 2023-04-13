@@ -1,25 +1,28 @@
 .page-footer {
-  text-transform: uppercase;
-  text-align: center;
   padding: 33px 82px;
+
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .page-footer__hashtag {
   margin: 0;
   margin-bottom: 30px;
+
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
 
 .page-footer__copyright-link {
-  max-width: 129px;
   display: flex;
-  margin: 0 auto;
-  align-items: center;
   justify-content: space-between;
-  text-decoration: none;
+  align-items: center;
+  max-width: 129px;
+  margin: 0 auto;
+
   color: $color-black;
+  text-decoration: none;
 
   &:hover {
     color: $color-seagull;
