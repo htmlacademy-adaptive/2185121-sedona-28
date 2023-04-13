@@ -189,13 +189,13 @@
             <label class="form__textarea-input">
               <span class="visually-hidden">Напишите ваши эмоции.</span>
               <textarea class="form__textarea form-input form-input--textarea" name="emotion"
-                placeholder="Опишите подробно все свои восторги" rows="10" cols="30"></textarea>
+                placeholder="Опишите подробно все свои восторги" rows="9"></textarea>
             </label>
           </fieldset>
 
           <!-- Отправить отзыв -->
           <div class="form__button-wrapper">
-            <button class="form__button" type="submit">Отправить отзыв</button>
+            <button class="form__button button" type="submit">Отправить отзыв</button>
             <p class="form__notice">* — обязательные поля</p>
           </div>
         </form>
@@ -219,7 +219,8 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+            target="_blank">
             <span class="visually-hidden">Ютуб.</span>
           </a>
         </li>
@@ -239,23 +240,26 @@
 
     <!-- popap -->
 
-    <div class="modal modal--error">
+    <div class="modal modal--error modal--error-geometry">
       <h2 class="modal__title">Что-то пошло не так!</h2>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal__button" type="button">Ок</button>
+      <button class="modal__button modal__button--error button" type="button">Ок</button>
     </div>
 
-    <div class="modal modal--success">
-      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его
-        на
-        сайте.</p>
+    <div class="modal modal--success modal--success-geometry">
+      <div class="modal__text-wrapper">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
+          его
+          на
+          сайте.</p>
+      </div>
       <div class="modal__button-wrapper">
-        <button class="modal__button" type="button">Закрыть окно</button>
+        <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
       </div>
     </div>
   </div>
-  <script  src="js/burger-menu.js"></script>
+  <script src="js/burger-menu.js"></script>
 </body>
 
 </html>
