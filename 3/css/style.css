@@ -292,7 +292,11 @@ img {
   display: block;
   width: 100%;
   max-height: 350px;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+.map__iframe {
+  width: 100%;
 }
 
 .page-footer {
@@ -404,9 +408,6 @@ img {
 }
 
 .gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -426,6 +427,9 @@ img {
 
 .gallery__image {
   display: block;
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
 }
 
 .gallery__title {
@@ -473,8 +477,6 @@ img {
 .video__image {
   display: block;
   width: 100%;
-  max-height: 177px;
-  margin: 0 auto;
   object-fit: cover;
 }
 
@@ -488,11 +490,12 @@ img {
 }
 
 .form__fieldset {
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 24px;
   padding-right: 20px;
-  padding-bottom: 34px;
+  padding-bottom: 24px;
   padding-left: 20px;
   border: none;
 }
@@ -510,12 +513,21 @@ img {
 .form__inputs-list,
 .form__checkbox-list,
 .form__radio-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.form__radio-item:not(:last-child),
+.form__checkbox-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .form__textarea {
+  width: 100%;
   min-width: 279px;
   margin: 0;
   padding: 16px;
@@ -534,15 +546,15 @@ img {
 
 .form__button-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
+  width: 100%;
   padding-right: 20px;
   padding-left: 20px;
 }
 
 .form__button {
-  min-width: 280px;
+  width: 100%;
   margin-right: auto;
   padding: 16px 20px;
 }
@@ -553,10 +565,13 @@ img {
   margin-left: auto;
   font-size: 12px;
   color: rgba(51, 51, 51, 0.6);
+  text-transform: uppercase;
 }
 
 .form-input {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .form-input__text {
