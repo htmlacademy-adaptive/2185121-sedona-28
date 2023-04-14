@@ -1,5 +1,7 @@
 .form-input {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .form-input__text {
