@@ -10,10 +10,16 @@
   padding: 0;
 
   list-style: none;
-}
 
-.site-list.active {
-  display: block;
+  .is-open & {
+    display: block;
+  }
+
+  .no-js & {
+    position: relative;
+
+    display: block;
+  }
 }
 
 .site-list__link {

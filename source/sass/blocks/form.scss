@@ -6,17 +6,30 @@
 .form__fieldset {
   width: 100%;
   margin: 0;
+  margin-top: 24px;
   padding: 0;
-  padding-top: 24px;
   padding-right: 20px;
-  padding-bottom: 24px; // Заглушка, реальный паддинг надо высчитать, он разный
+  padding-bottom: 24px;
   padding-left: 20px;
 
   border: none;
+
+  &--name {
+    padding-bottom: 39px;
+  }
+
+  &--contacts {
+    padding-bottom: 34px;
+  }
+
+  &--textarea {
+    padding-bottom: 0;
+  }
 }
 
 .form__legend {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 
   font-weight: 700;
@@ -38,6 +51,12 @@
   list-style: none;
 }
 
+.form__inputs-item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
 .form__radio-item:not(:last-child),
 .form__checkbox-item:not(:last-child) {
   margin-bottom: 16px;
@@ -46,6 +65,7 @@
 .form__textarea {
   width: 100%;
   min-width: 279px;
+  height: 160px;
   margin: 0;
   padding: 16px;
 
@@ -76,6 +96,7 @@
 
 .form__button {
   width: 100%;
+  margin-top: 56px;
   margin-right: auto;
   padding: 16px 20px;
 }

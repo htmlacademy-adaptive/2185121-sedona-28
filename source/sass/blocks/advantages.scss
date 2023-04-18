@@ -20,7 +20,11 @@
 }
 
 .advantages__heading {
-  padding: 36px 20px 28px 20px;
+  padding: 32px 18px 16px 18px;
+}
+
+.advantages__heading .heading__title {
+  margin-bottom: 35px;
 }
 
 .advantages__title {
@@ -32,6 +36,10 @@
 
   &--white {
     color: $color-white;
+  }
+
+  &--no-nubmer {
+    margin-bottom: 16px;
   }
 }
 
@@ -67,13 +75,17 @@
 
 .advantages__list {
   margin: 0;
-  padding: 0;
+  padding: 23px 18px 46px 65px;
 
   list-style: none;
 }
 
 .advantages__item {
-  padding-left: 65px;
+  padding-top: 8px;
+
+  &:not(:first-child) {
+    margin-top: 25px;
+  }
 }
 
 .advantages__sublist {
@@ -82,10 +94,13 @@
 
   list-style: none;
   text-align: center;
+
+  background-color: $color-whisper-lightness;
 }
 
 .advantages__subitem {
-  background-color: $color-whisper-lightness;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .advantages__subtitle {

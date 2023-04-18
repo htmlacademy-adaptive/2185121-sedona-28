@@ -2,6 +2,10 @@
   position: relative;
 
   padding: 17px 20px;
+
+  &.no-js {
+    padding: 0;
+  }
 }
 
 .main-header__logo {
@@ -10,17 +14,15 @@
   left: 50%;
   z-index: 1;
 
-  display: block;
+  display: flex;
+  width: 185px;
+  height: 96px;
 
   transform: translate(-50%);
 
   &:hover {
     opacity: 0.6;
   }
-}
-
-.main-header__logo-image {
-  max-width: none;
 }
 
 .main-header__toggle {

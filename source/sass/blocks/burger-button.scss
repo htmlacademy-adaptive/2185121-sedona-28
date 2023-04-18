@@ -14,6 +14,10 @@
   cursor: pointer;
 
   transition: transform 0.3s ease;
+
+  .no-js & {
+    display: none;
+  }
 }
 
 .burger-button__line {
@@ -30,7 +34,7 @@
   }
 }
 
-.burger-button.active .burger-button__line {
+.is-open .burger-button__line {
   background-color: $color-white;
 
   &:nth-child(2) {
