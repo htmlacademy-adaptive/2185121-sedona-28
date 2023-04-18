@@ -38,6 +38,7 @@ img {
 .content-wrapper {
   width: 100%;
   max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
@@ -57,21 +58,22 @@ img {
   position: relative;
   padding: 17px 20px;
 }
+.main-header.no-js {
+  padding: 0;
+}
 
 .main-header__logo {
   position: absolute;
   top: 0;
   left: 50%;
   z-index: 1;
-  display: block;
+  display: flex;
+  width: 185px;
+  height: 96px;
   transform: translate(-50%);
 }
 .main-header__logo:hover {
   opacity: 0.6;
-}
-
-.main-header__logo-image {
-  max-width: none;
 }
 
 .main-header__toggle {
@@ -89,8 +91,11 @@ img {
   padding: 0;
   list-style: none;
 }
-
-.site-list.active {
+.is-open .site-list {
+  display: block;
+}
+.no-js .site-list {
+  position: relative;
   display: block;
 }
 
@@ -157,7 +162,11 @@ img {
 }
 
 .advantages__heading {
-  padding: 36px 20px 28px 20px;
+  padding: 32px 18px 16px 18px;
+}
+
+.advantages__heading .heading__title {
+  margin-bottom: 35px;
 }
 
 .advantages__title {
@@ -168,6 +177,9 @@ img {
 }
 .advantages__title--white {
   color: #ffffff;
+}
+.advantages__title--no-nubmer {
+  margin-bottom: 16px;
 }
 
 .advantages__number {
@@ -197,12 +209,15 @@ img {
 
 .advantages__list {
   margin: 0;
-  padding: 0;
+  padding: 23px 18px 46px 65px;
   list-style: none;
 }
 
 .advantages__item {
-  padding-left: 65px;
+  padding-top: 8px;
+}
+.advantages__item:not(:first-child) {
+  margin-top: 25px;
 }
 
 .advantages__sublist {
@@ -210,10 +225,12 @@ img {
   padding: 0;
   list-style: none;
   text-align: center;
+  background-color: #eeeeee;
 }
 
 .advantages__subitem {
-  background-color: #eeeeee;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .advantages__subtitle {
@@ -260,6 +277,7 @@ img {
 
 .hotel-search__title {
   margin: 0;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -374,6 +392,9 @@ img {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+.no-js .burger-button {
+  display: none;
+}
 
 .burger-button__line {
   display: block;
@@ -386,18 +407,18 @@ img {
   margin-bottom: 5px;
 }
 
-.burger-button.active .burger-button__line {
+.is-open .burger-button__line {
   background-color: #ffffff;
 }
-.burger-button.active .burger-button__line:nth-child(2) {
+.is-open .burger-button__line:nth-child(2) {
   position: relative;
   top: 48%;
   transform: rotate(45deg);
 }
-.burger-button.active .burger-button__line:nth-child(3) {
+.is-open .burger-button__line:nth-child(3) {
   display: none;
 }
-.burger-button.active .burger-button__line:nth-child(4) {
+.is-open .burger-button__line:nth-child(4) {
   position: relative;
   top: 10%;
   transform: rotate(-45deg);
@@ -405,6 +426,10 @@ img {
 
 .media-content__heading {
   padding: 37px 20px 25px 20px;
+}
+
+.media-content .heading__title {
+  margin-bottom: 24px;
 }
 
 .gallery {
@@ -423,6 +448,7 @@ img {
 
 .gallery__image-link {
   display: block;
+  margin-bottom: 15px;
 }
 
 .gallery__image {
@@ -435,6 +461,7 @@ img {
 .gallery__title {
   margin: 0;
   font-weight: 700;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -445,6 +472,7 @@ img {
 
 .gallery__count {
   display: block;
+  margin-top: 11px;
   font-weight: 700;
 }
 
@@ -459,6 +487,7 @@ img {
 
 .video__title {
   margin: 0;
+  margin-bottom: 27px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -484,6 +513,10 @@ img {
   padding: 36px 20px 28px 20px;
 }
 
+.feedback__heading .heading__title {
+  margin-bottom: 24px;
+}
+
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -492,16 +525,26 @@ img {
 .form__fieldset {
   width: 100%;
   margin: 0;
+  margin-top: 24px;
   padding: 0;
-  padding-top: 24px;
   padding-right: 20px;
   padding-bottom: 24px;
   padding-left: 20px;
   border: none;
 }
+.form__fieldset--name {
+  padding-bottom: 39px;
+}
+.form__fieldset--contacts {
+  padding-bottom: 34px;
+}
+.form__fieldset--textarea {
+  padding-bottom: 0;
+}
 
 .form__legend {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   font-weight: 700;
   font-size: 18px;
@@ -521,6 +564,10 @@ img {
   list-style: none;
 }
 
+.form__inputs-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .form__radio-item:not(:last-child),
 .form__checkbox-item:not(:last-child) {
   margin-bottom: 16px;
@@ -529,6 +576,7 @@ img {
 .form__textarea {
   width: 100%;
   min-width: 279px;
+  height: 160px;
   margin: 0;
   padding: 16px;
   font-weight: 700;
@@ -555,6 +603,7 @@ img {
 
 .form__button {
   width: 100%;
+  margin-top: 56px;
   margin-right: auto;
   padding: 16px 20px;
 }
@@ -576,6 +625,7 @@ img {
 
 .form-input__text {
   display: block;
+  padding-left: 16px;
   color: #333333;
   text-transform: uppercase;
 }
