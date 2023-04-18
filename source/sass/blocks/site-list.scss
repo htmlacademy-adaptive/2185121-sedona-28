@@ -1,0 +1,48 @@
+.site-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  .is-open & {
+    display: block;
+  }
+
+  .no-js & {
+    position: relative;
+
+    display: block;
+  }
+}
+
+.site-list__link {
+  display: block;
+  padding: 17px 67px 12px 67px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: $color-white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-seagull;
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+
+    background-color: $color-shakespeare-darknest;
+  }
+}

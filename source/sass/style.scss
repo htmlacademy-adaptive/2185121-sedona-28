@@ -1,1 +1,31 @@
 // Начните писать стили здесь
+// Переменные
+@import "./global/variables.scss";
+
+// Базовые стили
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/utils.scss";
+
+// Блоки
+@import "blocks/content-wrapper.scss";
+@import "blocks/page-body.scss";
+@import "blocks/main-header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/hero.scss";
+@import "blocks/advantages.scss";
+@import "blocks/heading.scss";
+@import "blocks/hotel-search.scss";
+@import "blocks/button.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/burger-button.scss";
+@import "blocks/media-content.scss";
+@import "blocks/gallery.scss";
+@import "blocks/video.scss";
+@import "blocks/feedback.scss";
+@import "blocks/form.scss";
+@import "blocks/form-input.scss";
+@import "blocks/custom-field.scss";
+@import "blocks/modal.scss";

@@ -1,0 +1,48 @@
+.gallery {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.gallery__item {
+  padding: 24px 20px 25px 20px;
+}
+
+.gallery__card {
+  margin: 0;
+}
+
+.gallery__image-link {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.gallery__image {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+
+  object-fit: cover;
+}
+
+.gallery__title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.gallery__author {
+  margin: 0;
+
+  color: $color-night-rider;
+}
+
+.gallery__count {
+  display: block;
+  margin-top: 11px;
+
+  font-weight: 700;
+}

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>Седона - Главная</title>
+  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="page-body">
   <div class="content-wrapper">
-    <header class="main-header">
+    <header class="main-header no-js">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/svg-image/logo-mobile.svg" width="185" height="96"
           alt="Логотип городка Седона.">
       </a>
-      <button class="main-header__toggle">
+      <button class="main-header__toggle burger-button" type="button">
         <span class="visually-hidden">Открыть/закрыть меню.</span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
       </button>
       <!-- navigation -->
       <nav class="main-header-navigation navigation">
@@ -43,6 +47,7 @@
         </ul>
       </nav>
     </header>
+
     <!-- Main -->
     <main class="main-container">
       <h1 class="visually-hidden">Городок Седона.</h1>
@@ -50,8 +55,8 @@
       <!-- hero block -->
       <section class="hero hero--index">
         <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-        <img class="hero__image" src="img/svg-image/hero-text-index-mobile.svg" width="282" height="214"
-          alt="Добро пожаловать в Седону.">
+        <img class="hero__image hero__image--index" src="img/svg-image/hero-text-index-mobile.svg" width="282"
+          height="214" alt="Добро пожаловать в Седону.">
       </section>
 
       <!-- Advantages -->
@@ -66,9 +71,10 @@
         <div class="advantages__item-wrapper">
           <figure class="advantages__photo-text">
             <figcaption class="advantages__content-wrapper">
-              <h3 class="advantages__title">настоящий городок</h3>
-              <span class="advantages__number">— №1 —</span>
-              <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <h3 class="advantages__title advantages__title--white">настоящий городок</h3>
+              <span class="advantages__number advantages__number--white">— №1 —</span>
+              <p class="advantages__description advantages__description--white">Седона — не аттракцион для туристов, там
+                течёт своя жизнь</p>
             </figcaption>
             <div class="advantages__image-wrapper">
               <img class="advantages__image" src="img/salon-index-mobile.jpg" width="320" height="260"
@@ -80,22 +86,16 @@
         <!-- home, eat, souvenirs -->
         <ul class="advantages__list">
           <li class="advantages__item ">
-            <div class="advantages__item-wrapper">
-              <h3 class="advantages__title">Жилье</h3>
-              <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </div>
+            <h3 class="advantages__title advantages__title--no-nubmer">Жилье</h3>
+            <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="advantages__item">
-            <div class="advantages__sitem-wrapper">
-              <h3 class="advantages__title">Еда</h3>
-              <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </div>
+            <h3 class="advantages__title advantages__title--no-nubmer">Еда</h3>
+            <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages__item">
-            <div class="advantages__item-wrapper">
-              <h3 class="advantages__title">Сувениры</h3>
-              <p class="advantages__description">Не только китайского, но и местного производства!</p>
-            </div>
+            <h3 class="advantages__title advantages__title--no-nubmer">Сувениры</h3>
+            <p class="advantages__description">Не только китайского, но и местного производства!</p>
           </li>
         </ul>
 
@@ -103,10 +103,11 @@
         <!-- number 2 -->
         <div class="advantages__item-wrapper">
           <figure class="advantages__photo-text">
-            <figcaption class="advantages__content-wrapper">
-              <h3 class="advantages__title">Там есть мост дьявола</h3>
-              <span class="advantages__number">— №2 —</span>
-              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <figcaption class="advantages__content-wrapper advantages__content-wrapper--second">
+              <h3 class="advantages__title advantages__title--white">Там есть мост дьявола</h3>
+              <span class="advantages__number advantages__number--white">— №2 —</span>
+              <p class="advantages__description advantages__description--white">Да, по нему можно пройти! Если вы
+                осмелитесь, конечно</p>
             </figcaption>
             <div class="advantages__image-wrapper">
               <img class="advantages__image" src="img/devil-bridge-index-mobile.jpg" width="320" height="260"
@@ -138,18 +139,19 @@
       <!-- Hotel Search -->
       <section class="hotel-search">
         <h2 class="hotel-search__title">Заинтересовались?</h2>
-        <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
+        <p class="hotel-search__text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
           гостиниц
           в Седоне
         </p>
-        <a class="hotel-search__button" href="https://echo.htmlacademy.ru/">найти гостиницу
+        <a class="hotel-search__button button" href="https://echo.htmlacademy.ru/">найти гостиницу
         </a>
       </section>
 
       <!-- Map -->
       <section class="map">
         <h2 class="visually-hidden">Карта: Где находится городок Седона</h2>
-        <img src="img/map-mobile.jpg" width="320" height="350" alt="Карта по расположению города Седона.">
+        <img class="map__image" src="img/map-mobile.jpg" width="320" height="350"
+          alt="Карта по расположению города Седона.">
         <div class="map__wrapper">
           <!-- вставил с Яндекс карт,ничего не правил в коде -->
           <div style="position: relative; overflow: hidden;"><a
@@ -157,8 +159,8 @@
               style="color: #eeeeee; font-size: 12px; position: absolute; top: 0px;">Яндекс Карты</a><a
               href="https://yandex.ru/maps/?ll=-111.641445%2C34.904004&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjQwMjg5OTA3EjpVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EsIEFyaXpvbmEsIENvY29uaW5vIENvdW50eSwgU2Vkb25hIgoNOIXfwhVeegtC&utm_medium=mapframe&utm_source=maps&z=10.37"
               style="color: #eeeeee; font-size: 12px; position: absolute; top: 14px;">Седона — Яндекс Карты</a><iframe
-              src="https://yandex.ru/map-widget/v1/-/CCUjZUV2KB" width="560" height="400" frameborder="1"
-              allowfullscreen="true" style="position: relative;"></iframe></div>
+              class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCUjZUV2KB" width="320" height="350"
+              frameborder="1" allowfullscreen="true" style="position: relative;"></iframe></div>
         </div>
       </section>
     </main>
@@ -170,17 +172,18 @@
       <!-- social -->
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
             <span class="visually-hidden">Вконтакте.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy" target="_blank">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank">
             <span class="visually-hidden">Телеграм.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+            target="_blank">
             <span class="visually-hidden">Ютуб.</span>
           </a>
         </li>
@@ -190,10 +193,15 @@
       <div class="page-footer__copyright">
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span class="page-footer__copyright-text">Разработано</span>
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z" />
+          </svg>
         </a>
       </div>
     </footer>
   </div>
+  <script src="js/burger-menu.js"></script>
 </body>
 
 </html>
