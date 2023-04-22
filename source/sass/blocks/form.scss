@@ -14,21 +14,76 @@
 
   border: none;
 
+  @media (min-width: $vp-768) {
+    margin-top: 0;
+    padding: 0;
+  }
+
   &--name {
     padding-bottom: 39px;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 63px;
+      padding-right: 28px;
+      padding-bottom: 0;
+    }
+
+    @media (min-width: $vp-1200) {
+      margin-bottom: 71px;
+      padding-right: 49px;
+    }
   }
 
   &--contacts {
     padding-bottom: 34px;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 63px;
+      padding-bottom: 0;
+      padding-left: 28px;
+    }
+
+    @media (min-width: $vp-1200) {
+      margin-bottom: 71px;
+      padding-left: 49px;
+    }
+  }
+
+  &--radio {
+    @media (min-width: $vp-768) {
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: $vp-1200) {
+      margin-bottom: 56px;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $vp-768) {
+      margin-bottom: 26px;
+    }
+
+    @media (min-width: $vp-1200) {
+      margin-bottom: 56px;
+    }
   }
 
   &--textarea {
+    margin-bottom: 48px;
     padding-bottom: 0;
+  }
+
+  &--half {
+    @media (min-width: $vp-768) {
+      width: 50%;
+    }
   }
 }
 
 .form__legend {
-  margin: 0;
+  max-width: 306px;
+  margin: 0 auto;
   margin-bottom: 20px;
   padding: 0;
 
@@ -37,11 +92,15 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 28px;
+
+    font-size: 21px;
+  }
 }
 
-.form__inputs-list,
-.form__checkbox-list,
-.form__radio-list {
+.form__inputs-list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -51,22 +110,106 @@
   list-style: none;
 }
 
+.form__radio-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+    max-width: 575px;
+  }
+
+  @media (min-width: $vp-1200) {
+    justify-content: start;
+    max-width: 960px;
+    padding: 17px 53px;
+  }
+}
+
+.form__checkbox-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+    max-width: 480px;
+  }
+
+  @media (min-width: $vp-1200) {
+    justify-content: start;
+    max-width: 960px;
+    padding: 31px 45px;
+  }
+}
+
 .form__inputs-item {
   &:not(:last-child) {
     margin-bottom: 16px;
   }
 }
 
-.form__radio-item:not(:last-child),
-.form__checkbox-item:not(:last-child) {
-  margin-bottom: 16px;
+.form__checkbox-item {
+  @media (min-width: $vp-768) {
+    width: 50%;
+    max-width: 224px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $vp-1200) {
+    width: auto;
+    max-width: none;
+    margin-bottom: 0;
+  }
+
+  &:not(:last-child) {
+    @media (max-width: calc($vp-768 - 1px)) {
+      margin-bottom: 26px;
+    }
+
+    @media (min-width: $vp-1200) {
+      margin-right: 64px;
+    }
+  }
+}
+
+.form__radio-item {
+  @media (min-width: $vp-768) {
+    width: 50%;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $vp-1200) {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  &:not(:last-child) {
+    @media (max-width: calc($vp-768 - 1px)) {
+      margin-bottom: 26px;
+    }
+
+    @media (min-width: $vp-1200) {
+      margin-right: 28px;
+    }
+  }
 }
 
 .form__textarea {
   width: 100%;
   min-width: 279px;
+  max-width: 768px;
   height: 160px;
-  margin: 0;
+  margin: 0 auto;
   padding: 16px;
 
   font-weight: 700;
@@ -90,8 +233,14 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+  }
 }
 
 .form__button {
@@ -99,6 +248,15 @@
   margin-top: 56px;
   margin-right: auto;
   padding: 16px 20px;
+
+  @media (min-width: $vp-768) {
+    max-width: 324px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $vp-1200) {
+    max-width: 384px;
+  }
 }
 
 .form__notice {
@@ -109,4 +267,11 @@
   font-size: 12px;
   color: rgba($color-night-rider, 0.6);
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    align-self: center;
+
+    font-size: 14px;
+    color: $color-night-rider;
+  }
 }

@@ -2,8 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
-  margin-bottom: 30px;
   padding: 0;
 
   list-style: none;
@@ -14,6 +12,8 @@
 }
 
 .social__link {
+  position: relative;
+
   display: block;
   padding: 24px;
 
@@ -22,14 +22,59 @@
   background-position: center;
 
   &--vk {
-    background-image: url("../img/svg-image/vk-icon-mobile.svg");
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 24px;
+      height: 14px;
+
+      background-image: url("../img/svg-image/vk-icon-mobile.svg");
+      transform: translate(-50%, -50%);
+    }
   }
 
   &--telegram {
-    background-image: url("../img/svg-image/telegram-icon-mobile.svg");
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 22px;
+      height: 18px;
+
+      background-image: url("../img/svg-image/telegram-icon-mobile.svg");
+      transform: translate(-50%, -50%);
+    }
   }
 
   &--youtube {
-    background-image: url("../img/svg-image/youtube-icon-mobile.svg");
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 20px;
+      height: 14px;
+
+      background-image: url("../img/svg-image/youtube-icon-mobile.svg");
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    background-color: $color-shakespeare-darknest;
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 }

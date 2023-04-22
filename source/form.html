@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Седона - Форма отзыва.</title>
@@ -71,7 +72,7 @@
         <form class="feedback__forms form" action="https://echo.htmlacademy.ru" method="post">
 
           <!-- Представьтесь -->
-          <fieldset class="form__fieldset form__fieldset--name">
+          <fieldset class="form__fieldset form__fieldset--name form__fieldset--half">
             <legend class="form__legend">Представьтесь:</legend>
             <ul class="form__inputs-list">
               <li class="form__inputs-item">
@@ -98,7 +99,7 @@
           </fieldset>
 
           <!-- Контактная информация -->
-          <fieldset class="form__fieldset form__fieldset--contacts">
+          <fieldset class="form__fieldset form__fieldset--contacts form__fieldset--half">
             <legend class="form__legend">Контактная информация:</legend>
             <ul class="form__inputs-list">
               <li class="form__inputs-item">
@@ -119,7 +120,7 @@
           </fieldset>
 
           <!-- Ваше Общее впечатление: -->
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--radio">
             <legend class="form__legend">Ваше Общее впечатление:</legend>
             <ul class="form__radio-list">
               <li class="form__radio-item">
@@ -147,7 +148,7 @@
           </fieldset>
 
           <!-- Посещенные достопримечательности -->
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--checkbox">
             <legend class="form__legend">посещенные достопримечательности:</legend>
             <ul class="form__checkbox-list">
               <li class="form__checkbox-item">
@@ -237,23 +238,26 @@
     </footer>
 
     <!-- popap -->
-
-    <div class="modal modal--error modal--error-geometry">
-      <h2 class="modal__title">Что-то пошло не так!</h2>
-      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal__button modal__button--error button" type="button">Ок</button>
+    <div class="modal">
+      <div class="modal__wrapper modal__wrapper--error modal__wrapper--error-geometry">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button modal__button--error button" type="button">Ок</button>
+      </div>
     </div>
 
-    <div class="modal modal--success modal--success-geometry">
-      <div class="modal__text-wrapper">
-        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
-          его
-          на
-          сайте.</p>
-      </div>
-      <div class="modal__button-wrapper">
-        <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
+    <div class="modal">
+      <div class="modal__wrapper modal__wrapper--success modal__wrapper--success-geometry">
+        <div class="modal__text-wrapper">
+          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
+            его
+            на
+            сайте.</p>
+        </div>
+        <div class="modal__button-wrapper">
+          <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
+        </div>
       </div>
     </div>
   </div>

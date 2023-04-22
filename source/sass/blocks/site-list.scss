@@ -1,10 +1,4 @@
 .site-list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-
-  display: none;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -13,12 +7,28 @@
 
   .is-open & {
     display: block;
+
+    @media (min-width: $vp-768) {
+      display: grid;
+    }
   }
 
   .no-js & {
     position: relative;
 
     display: block;
+
+    @media (min-width: $vp-768) {
+      display: grid;
+    }
+  }
+}
+
+.site-list__item {
+  &:nth-child(3) {
+    @media (min-width: $vp-768) {
+      grid-column-start: 4;
+    }
   }
 }
 
@@ -36,13 +46,40 @@
 
   background-color: $color-seagull;
 
+  @media (min-width: $vp-768) {
+    padding: 18px 20px 17px;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-black;
+
+    background-color: $color-white;
+  }
+
+  &--current {
+    @media (min-width: $vp-768) {
+      color: $color-roman-coffee;
+    }
+  }
+
   &:hover {
     background-color: $color-shakespeare;
+
+    @media (min-width: $vp-768) {
+      background-color: $color-pink-swan;
+    }
   }
 
   &:active {
     color: rgba($color-white, 0.3);
 
     background-color: $color-shakespeare-darknest;
+
+    @media (min-width: $vp-768) {
+      color: $color-black;
+
+      background-color: $color-pink-swan;
+      opacity: 0.6;
+    }
   }
 }
