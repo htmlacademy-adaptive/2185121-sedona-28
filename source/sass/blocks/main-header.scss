@@ -6,6 +6,10 @@
   &.no-js {
     padding: 0;
   }
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+  }
 }
 
 .main-header__logo {
@@ -26,5 +30,11 @@
 }
 
 .main-header__toggle {
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
 }

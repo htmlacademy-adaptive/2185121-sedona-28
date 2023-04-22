@@ -4,15 +4,22 @@
 }
 
 .heading__title {
-  margin: 0;
+  max-width: 270px;
+  margin: 0 auto;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: $vp-768) {
+    max-width: 400px;
+
+    font-size: 21px;
+  }
 }
 
 .heading__description {
-  margin: 0;
+  margin: 0 auto;
 
   color: $color-night-rider;
 }
