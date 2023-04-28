@@ -25,6 +25,22 @@
   background-color: $color-white-smoke;
   border: none;
 
+  &--tel {
+    padding-right: 58px;
+
+    background-image: url("../img/svg-image/icon-tel.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  &--mail {
+    padding-right: 58px;
+
+    background-image: url("../img/svg-image/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
   &::placeholder {
     color: rgba($color-black, 0.3);
   }
