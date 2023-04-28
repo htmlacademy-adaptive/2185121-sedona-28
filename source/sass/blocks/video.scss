@@ -1,4 +1,7 @@
 .video {
+  padding-right: 20px;
+  padding-left: 20px;
+
   text-align: center;
   text-transform: uppercase;
 
@@ -14,7 +17,7 @@
 }
 
 .video__text-wrapper {
-  padding: 17px 26px 38px 28px;
+  padding: 17px 6px 38px 8px;
 
   @media (min-width: $vp-768) {
     padding: 58px 26px 66px 28px;
@@ -47,12 +50,7 @@
 }
 
 .video__image-wrapper {
-  padding-right: 20px;
-  padding-left: 20px;
-
-  @media (min-width: $vp-768) {
-    padding: 0;
-  }
+  position: relative;
 }
 
 .video__image {
@@ -61,4 +59,20 @@
   max-height: 500px;
 
   object-fit: cover;
+}
+
+.video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+
+  display: block;
+  width: 48px;
+  height: 54px;
+
+  background-color: rgba($color-white, 0.7);
+  transform: translateX(-50%) translateY(-50%);
+
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
 }
