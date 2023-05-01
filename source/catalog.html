@@ -6,6 +6,13 @@
   <title>Седона - Каталог</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -22,25 +29,25 @@
         <span class="burger-button__line"></span>
       </button>
       <!-- navigation -->
-      <nav class="main-header-navigation navigation">
-        <ul class="navigation__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
+      <nav class="main-header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">
               главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="#">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="#">
               фото и видео
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">
               форма отзыва
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru" target="_blank">
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru" target="_blank">
               html academy
             </a>
           </li>
@@ -73,15 +80,22 @@
           <li class="gallery__item gallery__item--full">
             <figure class="gallery__card gallery__card--full">
               <a class="gallery__image-link" href="#" target="_blank">
-                <img class="gallery__image gallery__image--large" src="img/photo-1-mobile.jpg" width="280" height="280"
-                  alt="Дорога и вечернее солнце.">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/photo-open-spaces-desktop.jpg 1x, img/content/photo-open-spaces-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/photo-open-spaces-tablet.jpg 1x, img/content/photo-open-spaces-tablet@2x.jpg 2x">
+                  <img class="gallery__image gallery__image--large" src="img/content/photo-open-spaces-mobile.jpg"
+                    srcset="img/content/photo-open-spaces-mobile@2x.jpg 2x" width="280" height="280"
+                    alt="Дорога и вечернее солнце.">
+                </picture>
               </a>
               <figcaption class="gallery__text-wrapper gallery__text-wrapper--full">
                 <div class="gallery__description-wrapper">
                   <h3 class="gallery__title">неродные просторы</h3>
                   <p class="gallery__author">Автор фото: Борис</p>
                 </div>
-                <button class="gallery__button" type="button">
+                <button class="gallery__button gallery__button--full" type="button">
                   <span class="gallery__count">1350</span>
                   <span class="visually-hidden">Поставить лайк</span>
                 </button>
@@ -93,8 +107,15 @@
           <li class="gallery__item">
             <figure class="gallery__card">
               <a class="gallery__image-link" href="#" target="_blank">
-                <img class="gallery__image" src="img/photo-2-mobile.jpg" width="280" height="280"
-                  alt="Ветка растения на фоне горы.">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/photo-vegetation-desktop.jpg 1x, img/content/photo-vegetation-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/photo-vegetation-tablet.jpg 1x, img/content/photo-vegetation-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/content/photo-vegetation-mobile.jpg"
+                    srcset="img/content/photo-vegetation-mobile@2x.jpg 2x" width="280" height="280"
+                    alt="Ветка растения на фоне горы.">
+                </picture>
               </a>
               <figcaption class="gallery__text-wrapper">
                 <div class="gallery__description-wrapper">
@@ -113,8 +134,15 @@
           <li class="gallery__item">
             <figure class="gallery__card">
               <a class="gallery__image-link" href="#" target="_blank">
-                <img class="gallery__image" src="img/photo-3-mobile.jpg" width="280" height="280"
-                  alt="Дорога среди зеленого леса.">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/photo-road-desktop.jpg 1x, img/content/photo-road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/photo-road-tablet.jpg 1x, img/content/photo-road-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/content/photo-road-mobile.jpg"
+                    srcset="img/content/photo-road-mobile@2x.jpg 2x" width="280" height="280"
+                    alt="Дорога среди зеленого леса.">
+                </picture>
               </a>
               <figcaption class="gallery__text-wrapper gallery__text-wrapper--whisper">
                 <div class="gallery__description-wrapper">
@@ -133,7 +161,15 @@
           <li class="gallery__item">
             <figure class="gallery__card">
               <a class="gallery__image-link" href="#" target="_blank">
-                <img class="gallery__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола.">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/photo-devil-bridge-desktop.jpg 1x, img/content/photo-devil-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/photo-devil-bridge-tablet.jpg 1x, img/content/photo-devil-bridge-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/content/photo-devil-bridge-mobile.jpg"
+                    srcset="img/content/photo-devil-bridge-mobile@2x.jpg 2x" width="280" height="280"
+                    alt="Мост дьявола.">
+                </picture>
               </a>
               <figcaption class="gallery__text-wrapper">
                 <div class="gallery__description-wrapper">
@@ -158,16 +194,16 @@
           </p>
         </div>
         <div class="video__image-wrapper">
-          <a class="video__button" href="#" target="_blank">
-            <span class="visually-hidden">Запустить видео /
-              пауза.</span>
-            <img class="video__image" src="img/video-mobile.jpg" width="280" height="177"
-              alt="Видео дорога с машинами среди гор.">
-            <span class="video__icon"></span>
-          </a>
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/content/video-desktop.jpg 1x, img/content/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/content/video-tablet.jpg 1x, img/content/video-tablet@2x.jpg 2x">
+            <img class="video__image" src="img/content/video-mobile.jpg" srcset="img/content/video-mobile@2x.jpg 2x"
+              width="280" height="177" alt="Видео дорога с машинами среди гор.">
+          </picture>
           <a class="video__play" href="#" target="_blank">
-            <span class="visually-hidden">Запустить видео /
-              пауза.</span>
+            <span class="visually-hidden">Запустить видео / пауза.</span>
           </a>
         </div>
       </section>

@@ -2,6 +2,30 @@
   position: relative;
 
   background-color: $color-black;
+  background-image: url("../img/background/hero-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/hero-background-mobile@2x.jpg");
+  }
+
+  @media (min-width: $vp-768) {
+    background-image: url("../img/background/hero-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/hero-background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $vp-1200) {
+    background-image: url("../img/background/hero-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/hero-background-desktop@2x.jpg");
+    }
+  }
 
   &::after {
     content: "";
@@ -19,11 +43,6 @@
   &--index {
     padding: 90px 19px 85px 19px;
 
-    background-image: url("../img/hero-background-mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
     @media (min-width: $vp-768) {
       padding: 77px 154px 91px 153px;
     }
@@ -31,11 +50,6 @@
 
   &--inner {
     padding: 52px 46px 67px 45px;
-
-    background-image: url("../img/hero-background-inner-mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
     @media (min-width: $vp-768) {
       padding: 95px 70px 117px 70px;
@@ -56,12 +70,21 @@
       width: 461px;
       height: 350px;
     }
+
+    @media (min-width: $vp-1200) {
+      width: 460px;
+    }
   }
 
   &--inner {
     @media (min-width: $vp-768) {
       width: 457px;
       height: 78px;
+    }
+
+    @media (min-width: $vp-1200) {
+      width: 460px;
+      height: 80px;
     }
   }
 }
