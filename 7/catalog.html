@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Седона - Каталог</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/2185121-sedona-28/7/">
+</head>
+
+<body class="page-body">
+  <div class="content-wrapper">
+    <header class="main-header no-js">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/svg-image/logo-mobile.svg" width="185" height="96"
+          alt="Логотип городка Седона.">
+      </a>
+      <button class="main-header__toggle burger-button" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню.</span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+      </button>
+      <!-- navigation -->
+      <nav class="main-header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">
+              главная
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="#">
+              фото и видео
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">
+              форма отзыва
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru" target="_blank">
+              html academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main-container">
+      <h1 class="visually-hidden">Фото и видео из городка Седона.</h1>
+
+      <!-- hero block -->
+      <section class="hero hero--inner">
+        <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
+        <img class="hero__image hero__image--inner" src="img/svg-image/hero-text-inner-mobile.svg" width="229"
+          height="39" alt="Седона.">
+      </section>
+
+      <!-- Cards -->
+      <section class="media-content">
+        <div class="media-content__heading heading">
+          <h2 class="heading__title">Фото и видео</h2>
+          <p class="heading__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+            забыть
+            о политике и экономике.</p>
+        </div>
+        <ul class=" media-content__gallery gallery">
+
+          <!-- card 1 -->
+          <li class="gallery__item gallery__item--full">
+            <figure class="gallery__card gallery__card--full">
+              <a class="gallery__image-link" href="#" target="_blank">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/photo-open-spaces-desktop.jpg 1x, img/content/photo-open-spaces-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/photo-open-spaces-tablet.jpg 1x, img/content/photo-open-spaces-tablet@2x.jpg 2x">
+                  <img class="gallery__image gallery__image--large" src="img/content/photo-open-spaces-mobile.jpg"
+                    srcset="img/content/photo-open-spaces-mobile@2x.jpg 2x" width="280" height="280"
+                    alt="Дорога и вечернее солнце.">
+                </picture>
+              </a>
+              <figcaption class="gallery__text-wrapper gallery__text-wrapper--full">
+                <div class="gallery__description-wrapper">
+                  <h3 class="gallery__title">неродные просторы</h3>
+                  <p class="gallery__author">Автор фото: Борис</p>
+                </div>
+                <button class="gallery__button gallery__button--full" type="button">
+                  <span class="gallery__count">1350</span>
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
+              </figcaption>
+            </figure>
+          </li>
+
+          <!-- card 2 -->
+          <li class="gallery__item">
+            <figure class="gallery__card">
+              <a class="gallery__image-link" href="#" target="_blank">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/photo-vegetation-desktop.jpg 1x, img/content/photo-vegetation-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/photo-vegetation-tablet.jpg 1x, img/content/photo-vegetation-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/content/photo-vegetation-mobile.jpg"
+                    srcset="img/content/photo-vegetation-mobile@2x.jpg 2x" width="280" height="280"
+                    alt="Ветка растения на фоне горы.">
+                </picture>
+              </a>
+              <figcaption class="gallery__text-wrapper">
+                <div class="gallery__description-wrapper">
+                  <h3 class="gallery__title">местная растительность</h3>
+                  <p class="gallery__author">Автор фото: Сергей</p>
+                </div>
+                <button class="gallery__button" type="button">
+                  <span class="gallery__count">143</span>
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
+              </figcaption>
+            </figure>
+          </li>
+
+          <!-- card 3 -->
+          <li class="gallery__item">
+            <figure class="gallery__card">
+              <a class="gallery__image-link" href="#" target="_blank">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/photo-road-desktop.jpg 1x, img/content/photo-road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/photo-road-tablet.jpg 1x, img/content/photo-road-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/content/photo-road-mobile.jpg"
+                    srcset="img/content/photo-road-mobile@2x.jpg 2x" width="280" height="280"
+                    alt="Дорога среди зеленого леса.">
+                </picture>
+              </a>
+              <figcaption class="gallery__text-wrapper gallery__text-wrapper--whisper">
+                <div class="gallery__description-wrapper">
+                  <h3 class="gallery__title">дорога на север</h3>
+                  <p class="gallery__author">Автор фото: Пётр</p>
+                </div>
+                <button class="gallery__button" type="button">
+                  <span class="gallery__count">96</span>
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
+              </figcaption>
+            </figure>
+          </li>
+
+          <!-- card 4 -->
+          <li class="gallery__item">
+            <figure class="gallery__card">
+              <a class="gallery__image-link" href="#" target="_blank">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/photo-devil-bridge-desktop.jpg 1x, img/content/photo-devil-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/photo-devil-bridge-tablet.jpg 1x, img/content/photo-devil-bridge-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/content/photo-devil-bridge-mobile.jpg"
+                    srcset="img/content/photo-devil-bridge-mobile@2x.jpg 2x" width="280" height="280"
+                    alt="Мост дьявола.">
+                </picture>
+              </a>
+              <figcaption class="gallery__text-wrapper">
+                <div class="gallery__description-wrapper">
+                  <h3 class="gallery__title">мост дьявола</h3>
+                  <p class="gallery__author">Автор фото: Антон</p>
+                </div>
+                <button class="gallery__button" type="button">
+                  <span class="gallery__count">254</span>
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Вы еще сомневаетесь? -->
+      <section class="video">
+        <div class="video__text-wrapper">
+          <h2 class="video__title">Все еще сомневаетесь?</h2>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+          </p>
+        </div>
+        <div class="video__image-wrapper">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/content/video-desktop.jpg 1x, img/content/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/content/video-tablet.jpg 1x, img/content/video-tablet@2x.jpg 2x">
+            <img class="video__image" src="img/content/video-mobile.jpg" srcset="img/content/video-mobile@2x.jpg 2x"
+              width="280" height="177" alt="Видео дорога с машинами среди гор.">
+          </picture>
+          <a class="video__play" href="#" target="_blank">
+            <span class="visually-hidden">Запустить видео / пауза.</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="page-footer">
+      <h2 class="page-footer__hashtag">#visitsedona</h2>
+
+      <!-- social -->
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
+            <span class="visually-hidden">Вконтакте.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank">
+            <span class="visually-hidden">Телеграм.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+            target="_blank">
+            <span class="visually-hidden">Ютуб.</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- copyright -->
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <svg width="27" height="35">
+            <use href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="js/burger-menu.js"></script>
+</body>
+
+</html>
