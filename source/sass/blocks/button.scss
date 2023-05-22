@@ -4,7 +4,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: $ff-ptsans;
   color: $color-white;
   text-transform: uppercase;
   text-decoration: none;
@@ -12,4 +12,26 @@
   background-color: $color-seagull;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+
+    background-color: $color-shakespeare-darknest;
+  }
+
+  &:focus-visible {
+    outline: 3px $color-seagull solid;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    color: $color-white;
+
+    background-color: $color-whisper-standart;
+    cursor: default;
+  }
 }

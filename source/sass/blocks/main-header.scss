@@ -25,7 +25,16 @@
   transform: translate(-50%);
 
   &:hover {
-    opacity: 0.6;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.8;
   }
 }
 
@@ -36,5 +45,22 @@
 
   @media (min-width: $vp-768) {
     display: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 3px $color-roman-coffee solid;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.2;
   }
 }

@@ -4,7 +4,7 @@
   left: 0;
   z-index: 2;
 
-  display: grid;
+  display: none;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -19,11 +19,15 @@
   gap: 1px;
 
   .is-open & {
+    display: grid;
+
     transform: translateY(0);
   }
 
   .no-js & {
     position: relative;
+
+    display: grid;
 
     transform: translateY(0);
 
@@ -33,6 +37,8 @@
   @media (min-width: $vp-768) {
     position: relative;
     z-index: 0;
+
+    display: grid;
 
     background-color: $color-white;
     transform: translateY(0);
@@ -96,7 +102,9 @@
     background-color: $color-shakespeare;
 
     @media (min-width: $vp-768) {
-      background-color: $color-pink-swan;
+      color: $color-seagull;
+
+      background-color: $color-white;
     }
   }
 
@@ -106,10 +114,20 @@
     background-color: $color-shakespeare-darknest;
 
     @media (min-width: $vp-768) {
-      color: $color-black;
+      color: rgba($color-black, 0.3);
 
-      background-color: $color-pink-swan;
-      opacity: 0.6;
+      background-color: $color-white;
+    }
+  }
+
+  &:focus-visible {
+    outline: 3px $color-roman-coffee solid;
+
+    @media (min-width: $vp-768) {
+      color: $color-seagull;
+
+      background-color: $color-white-smoke;
+      outline: none;
     }
   }
 }

@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $vp-1200) {
-    padding: 0 200px 84px 200px;
+    padding: 0 201px 84px 199px;
   }
 }
 
@@ -20,11 +20,11 @@
   padding: 17px 6px 38px 8px;
 
   @media (min-width: $vp-768) {
-    padding: 58px 26px 66px 28px;
+    padding: 57px 26px 90px 28px;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 62px 26px 64px 26px;
+    padding: 60px 26px 87px 26px;
   }
 }
 
@@ -38,7 +38,13 @@
   line-height: 26px;
 
   @media (min-width: $vp-768) {
+    margin-bottom: 30px;
+
     font-size: 30px;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin-bottom: 32px;
   }
 }
 
@@ -75,4 +81,17 @@
   transform: translateX(-50%) translateY(-50%);
 
   clip-path: polygon(100% 50%, 0 0, 0 100%);
+
+  &:hover {
+    background-color: rgba($color-white, 0.9);
+  }
+
+  &:active {
+    background-color: rgba($color-white, 0.5);
+  }
+
+  &:focus-visible {
+    background-color: rgba($color-white, 1);
+    outline: none;
+  }
 }

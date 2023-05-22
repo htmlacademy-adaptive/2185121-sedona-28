@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Седона - Форма отзыва.</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
@@ -42,7 +44,7 @@
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="#">
+            <a class="navigation__link navigation__link--current">
               форма отзыва
             </a>
           </li>
@@ -238,17 +240,15 @@
       </ul>
 
       <!-- copyright -->
-      <div class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="page-footer__copyright-text">Разработано</span>
-          <svg width="27" height="35">
-            <use href="img/sprite.svg#htmlacademy-mobile"></use>
-          </svg>
-        </a>
-      </div>
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <svg class="page-footer__copyright-icon" width="27" height="35">
+          <use href="img/sprite.svg#htmlacademy-mobile"></use>
+        </svg>
+      </a>
     </footer>
 
-    <!-- popap -->
+    <!-- popap 1. Для отображения нужно повесить модификатор modal--is-open -->
     <div class="modal">
       <div class="modal__wrapper modal__wrapper--error modal__wrapper--error-geometry">
         <h2 class="modal__title">Что-то пошло не так!</h2>
@@ -257,11 +257,13 @@
       </div>
     </div>
 
+    <!-- popap 2. Для отображения нужно повесить модификатор modal--open -->
     <div class="modal">
       <div class="modal__wrapper modal__wrapper--success modal__wrapper--success-geometry">
         <div class="modal__text-wrapper">
           <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
+          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы
+            опубликуем
             его
             на
             сайте.</p>

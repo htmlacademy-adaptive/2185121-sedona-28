@@ -8,7 +8,6 @@
 
   background-color: inherit;
   border: none;
-  outline: none;
   cursor: pointer;
 
   transition: transform 0.3s ease;
@@ -33,6 +32,8 @@
 }
 
 .is-open .burger-button__line {
+  width: 27px;
+
   background-color: $color-white;
 
   &:nth-child(2) {

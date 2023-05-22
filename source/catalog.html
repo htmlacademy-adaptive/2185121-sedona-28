@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Седона - Каталог</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
@@ -37,7 +39,7 @@
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="#">
+            <a class="navigation__link navigation__link--current">
               фото и видео
             </a>
           </li>
@@ -81,6 +83,13 @@
             <figure class="gallery__card gallery__card--full">
               <a class="gallery__image-link" href="#" target="_blank">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/content/photo-open-spaces-desktop.webp 1x, img/content/photo-open-spaces-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/content/photo-open-spaces-tablet.webp 1x, img/content/photo-open-spaces-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/photo-open-spaces-mobile.webp 1x, img/content/photo-open-spaces-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)"
                     srcset="img/content/photo-open-spaces-desktop.jpg 1x, img/content/photo-open-spaces-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -108,6 +117,13 @@
             <figure class="gallery__card">
               <a class="gallery__image-link" href="#" target="_blank">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/content/photo-vegetation-desktop.webp 1x, img/content/photo-vegetation-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/content/photo-vegetation-tablet.webp 1x, img/content/photo-vegetation-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/photo-vegetation-mobile.webp 1x, img/content/photo-vegetation-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)"
                     srcset="img/content/photo-vegetation-desktop.jpg 1x, img/content/photo-vegetation-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -131,10 +147,17 @@
           </li>
 
           <!-- card 3 -->
-          <li class="gallery__item">
+          <li class="gallery__item gallery__item--whisper">
             <figure class="gallery__card">
               <a class="gallery__image-link" href="#" target="_blank">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/content/photo-road-desktop.webp 1x, img/content/photo-road-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/content/photo-road-tablet.webp 1x, img/content/photo-road-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/photo-road-mobile.webp 1x, img/content/photo-road-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)"
                     srcset="img/content/photo-road-desktop.jpg 1x, img/content/photo-road-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -144,7 +167,7 @@
                     alt="Дорога среди зеленого леса.">
                 </picture>
               </a>
-              <figcaption class="gallery__text-wrapper gallery__text-wrapper--whisper">
+              <figcaption class="gallery__text-wrapper">
                 <div class="gallery__description-wrapper">
                   <h3 class="gallery__title">дорога на север</h3>
                   <p class="gallery__author">Автор фото: Пётр</p>
@@ -162,6 +185,13 @@
             <figure class="gallery__card">
               <a class="gallery__image-link" href="#" target="_blank">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/content/photo-devil-bridge-desktop.webp 1x, img/content/photo-devil-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/content/photo-devil-bridge-tablet.webp 1x, img/content/photo-devil-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/photo-devil-bridge-mobile.webp 1x, img/content/photo-devil-bridge-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)"
                     srcset="img/content/photo-devil-bridge-desktop.jpg 1x, img/content/photo-devil-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -195,6 +225,12 @@
         </div>
         <div class="video__image-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/content/video-desktop.webp 1x, img/content/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/video-tablet.webp 1x, img/content/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/video-mobile.webp 1x, img/content/video-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)"
               srcset="img/content/video-desktop.jpg 1x, img/content/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
@@ -234,14 +270,12 @@
       </ul>
 
       <!-- copyright -->
-      <div class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="page-footer__copyright-text">Разработано</span>
-          <svg width="27" height="35">
-            <use href="img/sprite.svg#htmlacademy-mobile"></use>
-          </svg>
-        </a>
-      </div>
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <svg class="page-footer__copyright-icon" width="27" height="35">
+          <use href="img/sprite.svg#htmlacademy-mobile"></use>
+        </svg>
+      </a>
     </footer>
   </div>
   <script src="js/burger-menu.js"></script>
