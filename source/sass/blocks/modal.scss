@@ -28,21 +28,29 @@
 
   &--error-geometry {
     max-width: 400px;
-    padding: 45px 42px 35px 41px;
+    padding: 45px 42px 35px 42px;
 
     @media (min-width: $vp-768) {
-      padding: 50px 47px 49px 46px;
+      padding: 49px 47px 49px 49px;
+    }
+
+    @media (min-width: $vp-1200) {
+      padding: 48px 47px 49px 46px;
     }
   }
 
   &--success-geometry {
-    max-width: 640px;
+    max-width: 320px;
+
+    @media (min-width: $vp-768) {
+      max-width: 640px;
+    }
   }
 }
 
 .modal__title {
   margin: 0 auto;
-  margin-bottom: 24px; // проверить на PP
+  margin-bottom: 25px;
 
   font-weight: 700;
   font-size: 18px;
@@ -50,6 +58,25 @@
 
   @media (min-width: $vp-768) {
     font-size: 30px;
+  }
+}
+
+.modal__wrapper--error .modal__title {
+  @media (min-width: $vp-768) {
+    max-width: 250px;
+    margin-bottom: 21px;
+
+    line-height: 40px;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin-bottom: 22px;
+  }
+}
+
+.modal__wrapper--success .modal__title {
+  @media (min-width: $vp-768) {
+    margin-bottom: 30px;
   }
 }
 
@@ -61,16 +88,26 @@
 
 .modal__text-wrapper {
   margin: 0 auto;
-  padding: 39px 39px 30px 37px;
+  padding: 39px 39px 51px 37px;
 
   @media (min-width: $vp-768) {
-    padding: 53px 99px 30px 97px;
+    padding: 53px 99px 50px 97px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 51px 99px 52px 97px;
   }
 }
 
 .modal__button {
   width: 100%;
   margin: 0 auto;
+
+  font-size: 18px;
+
+  @media (min-width: $vp-768) {
+    font-size: 21px;
+  }
 
   &--error {
     max-width: 180px;
@@ -79,6 +116,7 @@
 
     @media (min-width: $vp-768) {
       max-width: 272px;
+      margin-top: 48px;
     }
   }
 
@@ -88,7 +126,6 @@
 }
 
 .modal__button-wrapper {
-  margin-top: 2px;
   padding: 20px;
 
   background-color: $color-white-smoke;

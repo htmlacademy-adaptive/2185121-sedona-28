@@ -13,10 +13,16 @@
   @media (min-width: $vp-1200) {
     padding: 36px 120px;
   }
+
+  &--index {
+    @media (max-width: ($vp-768 - 1)) {
+      padding-top: 41px;
+    }
+  }
 }
 
 .page-footer__social {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 30px;
 
   @media (min-width: $vp-768) {
@@ -25,6 +31,7 @@
 }
 
 .page-footer__hashtag {
+  max-width: 200px;
   margin: 0;
   margin-bottom: 30px;
 
@@ -32,14 +39,15 @@
   font-size: 21px;
   line-height: 26px;
 
+  @media (max-width: ($vp-768 - 1)) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   @media (min-width: $vp-768) {
     align-self: center;
     margin-bottom: 0;
   }
-}
-
-.page-footer__copyright {
-  display: flex;
 }
 
 .page-footer__copyright-link {
@@ -52,6 +60,10 @@
   color: $color-black;
   text-decoration: none;
 
+  @media (min-width: $vp-768) {
+    margin: 0;
+  }
+
   &:hover {
     color: $color-seagull;
   }
@@ -59,8 +71,17 @@
   &:active {
     color: $color-pink-swan;
   }
+
+  &:focus-visible {
+    outline: 3px $color-seagull solid;
+    outline-offset: 2px;
+  }
 }
 
 .page-footer__copyright-text {
-  margin-right: 12px;
+  margin-right: 13px;
+}
+
+.page-footer__copyright-icon {
+  flex-shrink: 0;
 }

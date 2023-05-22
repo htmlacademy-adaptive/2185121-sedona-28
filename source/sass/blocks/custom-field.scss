@@ -5,17 +5,35 @@
   padding: 10px 0 10px 62px;
 
   cursor: pointer;
+
+
+  &:hover {
+    .custom-field__icon {
+      background-color: $color-whisper-standart;
+    }
+  }
+
+  &:active {
+    .custom-field__icon {
+      background-color: $color-light-gray-lightness;
+    }
+
+    .custom-field__icon::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 .custom-field__icon {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
 
   width: 46px;
   height: 46px;
 
   background-color: $color-white-smoke;
+  transform: translateY(-50%);
 
   &--radio {
     border-radius: 50%;
@@ -31,6 +49,15 @@
   font-size: 18px;
   line-height: 26px;
   color: $color-black;
+}
+
+.custom-field__input:focus-visible + .custom-field__icon {
+  box-shadow: 0 0 0 3px $color-seagull;
+}
+
+.custom-field__input:disabled + .custom-field__icon {
+  background-color: rgba($color-black, 0.3);
+  cursor: default;
 }
 
 .custom-field__input[type="radio"]:checked + .custom-field__icon::after {

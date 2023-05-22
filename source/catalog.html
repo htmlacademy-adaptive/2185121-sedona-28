@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="#">
+            <a class="navigation__link navigation__link--current">
               фото и видео
             </a>
           </li>
@@ -147,7 +147,7 @@
           </li>
 
           <!-- card 3 -->
-          <li class="gallery__item">
+          <li class="gallery__item gallery__item--whisper">
             <figure class="gallery__card">
               <a class="gallery__image-link" href="#" target="_blank">
                 <picture>
@@ -167,7 +167,7 @@
                     alt="Дорога среди зеленого леса.">
                 </picture>
               </a>
-              <figcaption class="gallery__text-wrapper gallery__text-wrapper--whisper">
+              <figcaption class="gallery__text-wrapper">
                 <div class="gallery__description-wrapper">
                   <h3 class="gallery__title">дорога на север</h3>
                   <p class="gallery__author">Автор фото: Пётр</p>
@@ -270,14 +270,12 @@
       </ul>
 
       <!-- copyright -->
-      <div class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="page-footer__copyright-text">Разработано</span>
-          <svg width="27" height="35">
-            <use href="img/sprite.svg#htmlacademy-mobile"></use>
-          </svg>
-        </a>
-      </div>
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <svg class="page-footer__copyright-icon" width="27" height="35">
+          <use href="img/sprite.svg#htmlacademy-mobile"></use>
+        </svg>
+      </a>
     </footer>
   </div>
   <script src="js/burger-menu.js"></script>

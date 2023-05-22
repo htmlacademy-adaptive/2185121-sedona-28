@@ -21,8 +21,7 @@
 .advantages__content-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 54px 18px 40px 18px;
+  padding: 51px 18px 40px 18px;
 
   text-align: center;
 
@@ -47,13 +46,13 @@
     }
 
     @media (min-width: $vp-1200) {
-      padding: 52px 50px 51px 50px;
+      padding: 52px 76px 51px 76px;
     }
   }
 }
 
 .advantages__heading {
-  padding: 32px 18px 32px 18px;
+  padding: 34px 24px 36px;
 
   @media (min-width: $vp-768) {
     padding: 47px 124px 56px 124px;
@@ -65,7 +64,12 @@
 }
 
 .advantages__heading .heading__title {
+  max-width: 450px;
   margin-bottom: 35px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 29px;
+  }
 }
 
 .advantages__title {
@@ -87,6 +91,16 @@
 
   &--no-nubmer {
     margin-bottom: 16px;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.advantages__item--souvenirs br {
+  @media (max-width: ($vp-768 - 1)) {
+    display: none;
   }
 }
 
@@ -96,6 +110,11 @@
   margin-bottom: 17px;
 
   color: $color-night-rider;
+
+  @media (min-width: $vp-768) {
+    margin-top: 14px;
+    margin-bottom: 23px;
+  }
 
   &--white {
     color: $color-white;
@@ -117,6 +136,22 @@
 
   &--white {
     color: $color-white;
+  }
+}
+
+.advantages__content-wrapper .advantages__description {
+  @media (min-width: $vp-1200) {
+    max-width: 265px;
+  }
+}
+
+.advantages__item--souvenirs .advantages__description {
+  @media (min-width: $vp-768) {
+    max-width: 183px;
+  }
+
+  @media (min-width: $vp-1200) {
+    max-width: 216px;
   }
 }
 
@@ -167,11 +202,11 @@
   @media (min-width: $vp-768) {
     width: 33.33%;
     margin: 0;
-    padding: 156px 33px 61px 33px;
+    padding: 157px 33px 61px 33px;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 166px 50px 71px 50px;
+    padding: 166px 50px 68px 50px;
   }
 
   &:not(:first-child) {
@@ -183,6 +218,10 @@
   }
 
   &--house {
+    @media (min-width: $vp-1200) {
+      padding-top: 170px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -253,11 +292,20 @@
   }
 
   &--souvenirs {
+    @media (min-width: $vp-768) {
+      padding-top: 154px;
+    }
+
+    @media (min-width: $vp-1200) {
+      padding-top: 171px;
+    }
+
+
     &::before {
       content: "";
       position: absolute;
       top: 0;
-      left: 0;
+      left: 4px;
 
       width: 32px;
       height: 38px;
@@ -303,7 +351,17 @@
 }
 
 .advantages__subitem {
-  padding: 24px 10px;
+  padding: 24px 18px;
+
+  &:nth-child(2) {
+    @media (min-width: $vp-768) {
+      padding: 40px 38px 41px 38px;
+    }
+
+    @media (min-width: $vp-1200) {
+      padding: 52px 50px;
+    }
+  }
 
   &:not(:last-child) {
     @media (max-width: ($vp-768 - 1px)) {
@@ -313,7 +371,7 @@
 
   @media (min-width: $vp-768) {
     width: 33.33%;
-    padding: 41px 33px 61px 33px;
+    padding: 41px 33px 41px 33px;
   }
 
   @media (min-width: $vp-1200) {
@@ -341,6 +399,15 @@
   margin-bottom: 17px;
 
   color: $color-night-rider;
+
+  @media (min-width: $vp-768) {
+    margin-top: 13px;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin-bottom: 24px;
+  }
 }
 
 .advantages__subdescription {

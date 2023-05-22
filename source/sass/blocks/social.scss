@@ -2,13 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 210px;
   padding: 0;
 
   list-style: none;
-}
 
-.social__item:not(:last-child) {
-  margin-right: 6px;
+  gap: 6px;
 }
 
 .social__link {
@@ -76,5 +75,10 @@
     &::after {
       opacity: 0.3;
     }
+  }
+
+  &:focus-visible {
+    outline: 3px $color-seagull solid;
+    outline-offset: 2px;
   }
 }
