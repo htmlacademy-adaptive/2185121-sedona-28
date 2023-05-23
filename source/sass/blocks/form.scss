@@ -257,7 +257,7 @@
   &:focus-visible {
     background-color: $color-white;
     outline: 0;
-    box-shadow: 0 0 0 4px #e5e5e5 inset;
+    box-shadow: 0 0 0 4px $color-whisper-standart inset;
   }
 
   &:disabled {

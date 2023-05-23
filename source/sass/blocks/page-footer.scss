@@ -5,13 +5,17 @@
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     padding: 36px 60px;
+
+    gap: 113px;
+    grid-template-columns: 136px 1fr 129px;
   }
 
   @media (min-width: $vp-1200) {
     padding: 36px 120px;
+
+    gap: 269px;
   }
 
   &--index {
@@ -54,6 +58,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-self: center;
   max-width: 129px;
   margin: 0 auto;
 
